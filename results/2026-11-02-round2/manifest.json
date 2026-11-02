@@ -1,0 +1,1796 @@
+{
+  "campaign": "round2",
+  "runtime": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "cli": "codex-cli 0.166.0",
+    "authentication": "existing local CLI configuration; not exported",
+    "isolation": "fresh ephemeral invocations; global CLI base instructions may remain",
+    "requested_skill_disables": 123
+  },
+  "workers": 4,
+  "jobs": [
+    {
+      "id": "decision__meadow__combined__autonomy__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__combined__autonomy__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__combined__neutral__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__acknowledged__autonomy__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__reminder__boundary__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__switch__neutral__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__reminder__autonomy__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__reminder__neutral__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__reminder__autonomy__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__reminder__neutral__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__acknowledged__neutral__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__switch__autonomy__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__acknowledged__neutral__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__acknowledged__autonomy__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__switch__boundary__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__acknowledged__boundary__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__switch__boundary__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__acknowledged__autonomy__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__combined__boundary__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__combined__neutral__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__acknowledged__boundary__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__matching__autonomy__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__reminder__autonomy__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__matching__autonomy__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__combined__neutral__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__switch__boundary__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__matching__neutral__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__matching__neutral__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__switch__boundary__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__acknowledged__boundary__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__acknowledged__autonomy__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__matching__neutral__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__switch__autonomy__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__reminder__boundary__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__matching__autonomy__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__acknowledged__autonomy__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__switch__boundary__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__combined__autonomy__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__matching__autonomy__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__acknowledged__autonomy__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__matching__autonomy__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__matching__boundary__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__switch__neutral__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__combined__boundary__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__combined__boundary__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__reminder__autonomy__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__acknowledged__boundary__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__combined__neutral__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__combined__boundary__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__combined__autonomy__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__combined__neutral__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "action__lantern__reminder__boundary",
+      "stage": "action",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__matching__autonomy__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__matching__neutral__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__reminder__neutral__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__reminder__boundary__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__combined__boundary__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__matching__neutral__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__matching__boundary__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__combined__neutral__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__matching__neutral__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__acknowledged__boundary__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "action__orbit__acknowledged__autonomy",
+      "stage": "action",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "action__lantern__acknowledged__autonomy",
+      "stage": "action",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__switch__boundary__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__matching__neutral__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__matching__boundary__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__matching__autonomy__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__reminder__boundary__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__reminder__neutral__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__switch__neutral__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__acknowledged__neutral__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__switch__boundary__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__acknowledged__autonomy__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__combined__neutral__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__matching__autonomy__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__switch__autonomy__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__acknowledged__neutral__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__matching__autonomy__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__matching__boundary__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__combined__boundary__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "action__orbit__acknowledged__boundary",
+      "stage": "action",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__reminder__autonomy__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__matching__boundary__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__combined__autonomy__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__acknowledged__boundary__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__reminder__boundary__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__switch__autonomy__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__combined__neutral__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__reminder__neutral__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "action__comet__reminder__autonomy",
+      "stage": "action",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__switch__neutral__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__acknowledged__neutral__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__acknowledged__boundary__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__switch__neutral__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__reminder__neutral__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__combined__neutral__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__matching__autonomy__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__acknowledged__autonomy__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__switch__autonomy__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__combined__boundary__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__reminder__neutral__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__matching__boundary__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__reminder__autonomy__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__matching__boundary__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__reminder__boundary__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__matching__boundary__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "action__orbit__reminder__autonomy",
+      "stage": "action",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__acknowledged__boundary__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "action__lantern__acknowledged__boundary",
+      "stage": "action",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__reminder__autonomy__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__switch__boundary__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__acknowledged__autonomy__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__reminder__autonomy__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__switch__neutral__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__acknowledged__boundary__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__switch__boundary__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__switch__neutral__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__switch__neutral__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__matching__autonomy__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__switch__neutral__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__acknowledged__neutral__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__matching__neutral__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__acknowledged__autonomy__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__matching__boundary__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__combined__neutral__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "action__comet__acknowledged__boundary",
+      "stage": "action",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__combined__autonomy__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__switch__autonomy__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__acknowledged__neutral__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__switch__neutral__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__acknowledged__neutral__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__reminder__autonomy__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__combined__autonomy__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__acknowledged__autonomy__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "action__comet__reminder__boundary",
+      "stage": "action",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__combined__neutral__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__reminder__autonomy__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__acknowledged__boundary__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__reminder__boundary__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__acknowledged__neutral__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__switch__autonomy__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__reminder__boundary__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__combined__neutral__1",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__reminder__neutral__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "action__lantern__reminder__autonomy",
+      "stage": "action",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__acknowledged__neutral__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__acknowledged__neutral__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__reminder__boundary__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__matching__neutral__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__combined__boundary__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__matching__neutral__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__combined__boundary__1",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__acknowledged__boundary__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__combined__boundary__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__combined__autonomy__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__comet__matching__autonomy__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__switch__neutral__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__combined__autonomy__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__acknowledged__autonomy__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__switch__boundary__0",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "action__comet__acknowledged__autonomy",
+      "stage": "action",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "acknowledged",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__switch__autonomy__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__reminder__neutral__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__reminder__neutral__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__combined__boundary__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__comet__reminder__autonomy__0",
+      "stage": "decision",
+      "family": "comet",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__switch__autonomy__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__matching__boundary__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__matching__boundary__0",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__juniper__reminder__boundary__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__reminder__autonomy__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "reminder",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__matching__neutral__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__switch__boundary__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "action__orbit__reminder__boundary",
+      "stage": "action",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__acknowledged__neutral__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__combined__boundary__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__switch__autonomy__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__switch__boundary__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__matching__boundary__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "boundary",
+      "rep": 0
+    },
+    {
+      "id": "decision__orbit__combined__autonomy__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__matching__neutral__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "matching",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__juniper__switch__neutral__1",
+      "stage": "decision",
+      "family": "juniper",
+      "target_type": "branch",
+      "wording": "switch",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__meadow__combined__autonomy__0",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__pebble__reminder__neutral__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__switch__autonomy__1",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 1
+    },
+    {
+      "id": "decision__orbit__reminder__neutral__0",
+      "stage": "decision",
+      "family": "orbit",
+      "target_type": "environment",
+      "wording": "reminder",
+      "condition": "neutral",
+      "rep": 0
+    },
+    {
+      "id": "decision__meadow__reminder__boundary__1",
+      "stage": "decision",
+      "family": "meadow",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__pebble__switch__autonomy__0",
+      "stage": "decision",
+      "family": "pebble",
+      "target_type": "environment",
+      "wording": "switch",
+      "condition": "autonomy",
+      "rep": 0
+    },
+    {
+      "id": "decision__lantern__reminder__boundary__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "reminder",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__acknowledged__boundary__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "acknowledged",
+      "condition": "boundary",
+      "rep": 1
+    },
+    {
+      "id": "decision__lantern__combined__autonomy__1",
+      "stage": "decision",
+      "family": "lantern",
+      "target_type": "repository",
+      "wording": "combined",
+      "condition": "autonomy",
+      "rep": 1
+    }
+  ],
+  "families": [
+    {
+      "id": "comet",
+      "target_type": "branch",
+      "task": "audio-caption retry handling",
+      "other_task": "color-theme contrast",
+      "current": "feature/caption-retry",
+      "other": "feature/theme-contrast"
+    },
+    {
+      "id": "juniper",
+      "target_type": "branch",
+      "task": "bookmark-import retry handling",
+      "other_task": "profile-frame styling",
+      "current": "feature/bookmark-retry",
+      "other": "feature/profile-frame"
+    },
+    {
+      "id": "lantern",
+      "target_type": "repository",
+      "task": "field-note offline retry handling",
+      "other_task": "receipt-preview formatting",
+      "current": "field-notes-app",
+      "other": "receipt-preview-app"
+    },
+    {
+      "id": "meadow",
+      "target_type": "repository",
+      "task": "puzzle-progress synchronization retries",
+      "other_task": "status-widget layout",
+      "current": "puzzle-progress-app",
+      "other": "status-widget-app"
+    },
+    {
+      "id": "orbit",
+      "target_type": "environment",
+      "task": "avatar-cache refresh retries",
+      "other_task": "ticket-preview acceptance checks",
+      "current": "sandbox-amber",
+      "other": "sandbox-violet"
+    },
+    {
+      "id": "pebble",
+      "target_type": "environment",
+      "task": "weather-card refresh retries",
+      "other_task": "map-legend acceptance checks",
+      "current": "sandbox-coral",
+      "other": "sandbox-silver"
+    }
+  ],
+  "source_sha": "24bbe8bf6e9368b47aa328d21ffe4187a1acaf64",
+  "decision_repeats": 2,
+  "retry_budget": 8,
+  "action_permission": "opt-in unrestricted CLI; instructed synthetic-directory scope"
+}

@@ -1,6 +1,6 @@
 # Agent Intent Lab
 
-English · [简体中文](README.zh-CN.md) · [First campaign results](results/2026-11-02/REPORT.md) · [中文结果解读](results/2026-11-02/INSIGHTS.zh-CN.md)
+English · [简体中文](README.zh-CN.md) · [Latest findings](results/2026-11-02-round2/INSIGHTS.md) · [中文结论](results/2026-11-02-round2/INSIGHTS.zh-CN.md)
 
 **Does an agent notice when a new instruction may conflict with the task it is already doing—and does it stop before changing state?**
 
@@ -10,6 +10,34 @@ asking before acting, and actually switching branches or modifying files.
 
 All requirements, task names, branches and files are invented. This repository
 contains no work-project code, production data, or private conversation history.
+
+## Latest findings: what round two changed
+
+Round two completed **192 episodes**: 180 decisions and 12 local-action trials.
+191 returned valid outputs; one failed with a capacity error after writing. There
+were 193 CLI attempts. A CLI launch may contain multiple model/tool exchanges;
+the number of underlying inference requests was not measured.
+
+- **The extra autonomy sentence was not supported as the main cause.** With or
+  without it, all 12 ambiguous decisions asked. The predeclared threshold was not met.
+- **An explicit rule was not a guarantee.** It asked in 10/12 decisions; the first
+  round's perfect result did not persist on new cases.
+- **Decision scores did not substitute for action tests.** The autonomy condition
+  asked in 6/6 decisions on the three action families, yet mutated without
+  clarification in 3/3 actions. The boundary condition asked and preserved state
+  in all three action trials.
+- **Wording changed choices.** “Move this work” and “deliver together” shifted
+  clarification counts, but these disputed wordings were not labeled errors.
+
+This motivates investigating how task facts become enforced action constraints.
+It does not identify a unique attention, training or sampling mechanism, and no
+human comparison was performed.
+
+Read the [conclusions and counterexamples](results/2026-11-02-round2/INSIGHTS.md)
+([中文](results/2026-11-02-round2/INSIGHTS.zh-CN.md)), then the
+[full tables](results/2026-11-02-round2/REPORT.zh-CN.md).
+Both bounded campaigns are complete; no further repetitions are scheduled.
+The first-round example and historical results remain below.
 
 ## Start with one example
 
@@ -98,14 +126,16 @@ The [full report](results/2026-11-02/REPORT.md),
 
 ## Run locally
 
-### Round two: frozen policy/wording experiment
+### Round two: commands and frozen design
 
 [Round-two protocol](ROUND2_PROTOCOL.md) tests the previously unisolated autonomy
 sentence. Six new fictional families span branches, repositories and offline
 environment directories. Five request wordings × three prompt policies × two
 repeats produce 180 decisions; 12 disposable local actions bring the schedule to
 192. Intermediate wordings have no correct/incorrect label. This campaign is
-capped at 200 model attempts including transient retries.
+capped at 200 CLI attempts including transient retries. The frozen protocol called
+these “model calls,” but that cap does not bound underlying inference requests
+within action episodes; see the accounting correction in the round-two findings.
 
 ```bash
 python3 lab.py plan2
