@@ -98,6 +98,25 @@ The [full report](results/2026-11-02/REPORT.md),
 
 ## Run locally
 
+### Round two: frozen policy/wording experiment
+
+[Round-two protocol](ROUND2_PROTOCOL.md) tests the previously unisolated autonomy
+sentence. Six new fictional families span branches, repositories and offline
+environment directories. Five request wordings × three prompt policies × two
+repeats produce 180 decisions; 12 disposable local actions bring the schedule to
+192. Intermediate wordings have no correct/incorrect label. This campaign is
+capped at 200 model attempts including transient retries.
+
+```bash
+python3 lab.py plan2
+python3 lab.py run2 --output .local/round2 --workers 4 --allow-actions
+python3 lab.py export2 --source .local/round2 --destination results/round2
+```
+
+The action-scope and CLI permission limitations below also apply to round two.
+
+### Adapter and round-one commands
+
 Requires Python 3.11+, Git and an authenticated `codex` CLI. Python dependencies
 are standard library only. Model and reasoning effort come from your existing
 CLI configuration and are captured in the run manifest; credentials are never
