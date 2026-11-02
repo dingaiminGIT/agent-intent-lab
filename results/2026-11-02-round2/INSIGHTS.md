@@ -60,6 +60,27 @@ Attention and probabilistic generation describe implementation. Those facts alon
 
 The action/decision difference does not isolate tool availability: action prompts also add file, directory and completion details and remove the JSON decision format. Actions use one repeat per family. All six acknowledged migrations reached the requested file state, but only five returned normally; the sixth remains an infrastructure error, not a valid completion.
 
+<a id="probability-and-cause"></a>
+
+### Does this establish a probabilistic root cause?
+
+Probabilistic generation is compatible with the observations, but does not by itself explain this particular failure. Two possibilities should be distinguished:
+
+| Possibility | Meaning |
+|---|---|
+| Sampling selects an undesirable output | The model favors clarification, but this generation produces a reply or action that proceeds. |
+| The model favors an undesirable action | Given the context, proceeding is already preferred over clarification. |
+
+These are action-level descriptions of possible explanations. **We did not measure action or token probabilities**, and do not claim the model performs a separate internal action-classification step.
+
+The second case can fail consistently even with fixed inputs, model and computation, using deterministic decoding. Probabilistic modeling, random sampling and incorrect judgment are distinct issues. Reducing generation randomness does not necessarily correct the interpretation of user authorization.
+
+The question still needing an explanation is: **why would this context favor proceeding?** Use of task facts, interpretation of the latest instruction as migration authority, and behavior shaped by training or runtime instructions are candidate explanations. Sampling conditions were not fixed, and prompts and execution settings changed. This campaign cannot separate those influences or attribute repeated-output variation solely to sampling.
+
+The supported engineering lesson is that **task-boundary compliance needs behavioral evaluation; the presence of a natural-language rule alone is not a deterministic guarantee.** This does not imply probabilistic systems cannot be reliable. It means reliability here cannot be inferred from the prompt alone. Stronger assurance would require independent checks at controlled tool entry points, covering every write path and potential bypass; this project has not validated such a gate.
+
+This section clarifies interpretation. It adds no experiments and changes no raw counts, scores or frozen protocol.
+
 ## Practical value and stopping point
 
 Treat boundary prompts as candidate improvements and measure behavior at the write boundary. Passing a content test verifies technical properties, not the user's intended target. A stronger engineering approach would enforce task/target bindings at controlled tool entry points and require an explicit confirmation record to change them. That requires covering every write path and preventing bypass or self-issued confirmation; this project has not implemented or validated such a guard.

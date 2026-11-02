@@ -33,6 +33,13 @@ This motivates investigating how task facts become enforced action constraints.
 It does not identify a unique attention, training or sampling mechanism, and no
 human comparison was performed.
 
+**Probabilistic generation is not a specific diagnosis of this failure.** Sampling
+can select an undesirable continuation, but the model can also rank an undesirable
+action first and fail under deterministic decoding. This experiment did not
+distinguish those cases. A natural-language rule needs action-level evaluation;
+its presence alone is not a deterministic guarantee. See
+[probability and causal attribution](results/2026-11-02-round2/INSIGHTS.md#probability-and-cause).
+
 Read the [conclusions and counterexamples](results/2026-11-02-round2/INSIGHTS.md)
 ([中文](results/2026-11-02-round2/INSIGHTS.zh-CN.md)), then the
 [full tables](results/2026-11-02-round2/REPORT.zh-CN.md).
