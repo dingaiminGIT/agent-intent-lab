@@ -1,0 +1,1698 @@
+{
+  "runtime": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "cli": "codex-cli 0.166.0",
+    "authentication": "existing local CLI configuration; not exported",
+    "isolation": "fresh ephemeral invocations; global CLI base instructions may remain",
+    "requested_skill_disables": 123
+  },
+  "repeats": 3,
+  "workers": 4,
+  "jobs": [
+    {
+      "id": "main__willow_override__explicit__0",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_override__explicit__2",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "main__willow_ambiguous__explicit__0",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_ambiguous__baseline__0",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "action__harbor_matching__explicit__1",
+      "stage": "action",
+      "fixture": "harbor_matching",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "probe__aurora_override",
+      "stage": "probe",
+      "fixture": "aurora_override",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_ambiguous__baseline__2",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "main__aurora_ambiguous__generic__1",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_matching__explicit__2",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "main__willow_override__baseline__0",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_matching__reminder__2",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_matching__explicit__0",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_override__baseline__2",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "review__willow_ambiguous__2",
+      "stage": "review",
+      "fixture": "willow_ambiguous",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__willow_ambiguous__baseline__2"
+    },
+    {
+      "id": "main__willow_ambiguous__reminder__0",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "main__aurora_ambiguous__baseline__2",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "main__harbor_matching__reminder__2",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_ambiguous__reminder__0",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "main__aurora_ambiguous__explicit__0",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "review__willow_matching__0",
+      "stage": "review",
+      "fixture": "willow_matching",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__willow_matching__baseline__0"
+    },
+    {
+      "id": "main__willow_matching__generic__2",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_ambiguous__generic__1",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_override__baseline__0",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_ambiguous__reminder__1",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_matching__explicit__0",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "review__willow_override__2",
+      "stage": "review",
+      "fixture": "willow_override",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__willow_override__baseline__2"
+    },
+    {
+      "id": "main__aurora_ambiguous__generic__2",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "review__willow_override__1",
+      "stage": "review",
+      "fixture": "willow_override",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__willow_override__baseline__1"
+    },
+    {
+      "id": "main__harbor_matching__baseline__1",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_matching__generic__2",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "review__harbor_override__0",
+      "stage": "review",
+      "fixture": "harbor_override",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__harbor_override__baseline__0"
+    },
+    {
+      "id": "review__aurora_override__0",
+      "stage": "review",
+      "fixture": "aurora_override",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__aurora_override__baseline__0"
+    },
+    {
+      "id": "main__aurora_matching__generic__0",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_override__baseline__2",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "main__aurora_matching__baseline__2",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "main__willow_matching__reminder__1",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "main__cedar_ambiguous__generic__0",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "review__aurora_matching__0",
+      "stage": "review",
+      "fixture": "aurora_matching",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__aurora_matching__baseline__0"
+    },
+    {
+      "id": "main__harbor_ambiguous__baseline__2",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "main__harbor_matching__generic__0",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_override__baseline__1",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "long__cedar_ambiguous",
+      "stage": "long",
+      "fixture": "cedar_ambiguous",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__aurora_override__generic__2",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "main__harbor_ambiguous__reminder__1",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "action__harbor_ambiguous__explicit__0",
+      "stage": "action",
+      "fixture": "harbor_ambiguous",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_matching__generic__1",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "main__harbor_ambiguous__generic__1",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "long__willow_ambiguous",
+      "stage": "long",
+      "fixture": "willow_ambiguous",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "long__willow_override",
+      "stage": "long",
+      "fixture": "willow_override",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_override__explicit__1",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "review__cedar_override__2",
+      "stage": "review",
+      "fixture": "cedar_override",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__cedar_override__baseline__2"
+    },
+    {
+      "id": "main__aurora_override__reminder__2",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_override__reminder__2",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "long__harbor_ambiguous",
+      "stage": "long",
+      "fixture": "harbor_ambiguous",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "action__harbor_override__baseline__1",
+      "stage": "action",
+      "fixture": "harbor_override",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_ambiguous__reminder__0",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "review__cedar_matching__2",
+      "stage": "review",
+      "fixture": "cedar_matching",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__cedar_matching__baseline__2"
+    },
+    {
+      "id": "review__harbor_override__2",
+      "stage": "review",
+      "fixture": "harbor_override",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__harbor_override__baseline__2"
+    },
+    {
+      "id": "main__willow_matching__reminder__2",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "main__willow_ambiguous__explicit__1",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__cedar_matching__explicit__2",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "main__harbor_matching__generic__2",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "main__aurora_matching__generic__1",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "long__aurora_ambiguous",
+      "stage": "long",
+      "fixture": "aurora_ambiguous",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_override__generic__2",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "review__aurora_override__1",
+      "stage": "review",
+      "fixture": "aurora_override",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__aurora_override__baseline__1"
+    },
+    {
+      "id": "main__aurora_override__baseline__1",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "review__cedar_ambiguous__2",
+      "stage": "review",
+      "fixture": "cedar_ambiguous",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__cedar_ambiguous__baseline__2"
+    },
+    {
+      "id": "main__willow_override__reminder__0",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "main__aurora_ambiguous__generic__0",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "review__aurora_ambiguous__1",
+      "stage": "review",
+      "fixture": "aurora_ambiguous",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__aurora_ambiguous__baseline__1"
+    },
+    {
+      "id": "main__harbor_ambiguous__explicit__2",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_override__reminder__0",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "probe__aurora_matching",
+      "stage": "probe",
+      "fixture": "aurora_matching",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "main__aurora_ambiguous__reminder__1",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "probe__harbor_ambiguous",
+      "stage": "probe",
+      "fixture": "harbor_ambiguous",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "review__aurora_ambiguous__0",
+      "stage": "review",
+      "fixture": "aurora_ambiguous",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__aurora_ambiguous__baseline__0"
+    },
+    {
+      "id": "main__harbor_matching__reminder__0",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_matching__baseline__0",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_ambiguous__reminder__2",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "main__willow_matching__generic__0",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "long__willow_matching",
+      "stage": "long",
+      "fixture": "willow_matching",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__aurora_override__baseline__2",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "review__willow_ambiguous__0",
+      "stage": "review",
+      "fixture": "willow_ambiguous",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__willow_ambiguous__baseline__0"
+    },
+    {
+      "id": "probe__willow_matching",
+      "stage": "probe",
+      "fixture": "willow_matching",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_matching__baseline__2",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "review__willow_ambiguous__1",
+      "stage": "review",
+      "fixture": "willow_ambiguous",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__willow_ambiguous__baseline__1"
+    },
+    {
+      "id": "main__aurora_override__generic__0",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_matching__explicit__1",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_ambiguous__generic__0",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_matching__explicit__1",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_override__explicit__0",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "action__harbor_override__explicit__0",
+      "stage": "action",
+      "fixture": "harbor_override",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_override__generic__1",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "main__harbor_ambiguous__explicit__0",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "review__cedar_override__1",
+      "stage": "review",
+      "fixture": "cedar_override",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__cedar_override__baseline__1"
+    },
+    {
+      "id": "main__harbor_override__reminder__2",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "review__aurora_override__2",
+      "stage": "review",
+      "fixture": "aurora_override",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__aurora_override__baseline__2"
+    },
+    {
+      "id": "main__willow_ambiguous__baseline__1",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_override__generic__1",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_matching__explicit__0",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_override__reminder__1",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_override__baseline__1",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "main__harbor_ambiguous__generic__2",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "probe__willow_override",
+      "stage": "probe",
+      "fixture": "willow_override",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "main__aurora_override__explicit__1",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__cedar_matching__reminder__1",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "main__harbor_matching__baseline__2",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "main__aurora_matching__reminder__2",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "action__harbor_matching__baseline__0",
+      "stage": "action",
+      "fixture": "harbor_matching",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "probe__cedar_ambiguous",
+      "stage": "probe",
+      "fixture": "cedar_ambiguous",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "review__willow_matching__1",
+      "stage": "review",
+      "fixture": "willow_matching",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__willow_matching__baseline__1"
+    },
+    {
+      "id": "main__aurora_ambiguous__explicit__2",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "action__harbor_ambiguous__explicit__1",
+      "stage": "action",
+      "fixture": "harbor_ambiguous",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "review__harbor_matching__0",
+      "stage": "review",
+      "fixture": "harbor_matching",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__harbor_matching__baseline__0"
+    },
+    {
+      "id": "main__aurora_ambiguous__explicit__1",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__harbor_override__generic__2",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_override__explicit__2",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "main__willow_ambiguous__explicit__2",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "main__willow_ambiguous__generic__2",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "main__harbor_override__reminder__0",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "long__aurora_matching",
+      "stage": "long",
+      "fixture": "aurora_matching",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_override__generic__2",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "main__willow_override__explicit__2",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "review__cedar_matching__1",
+      "stage": "review",
+      "fixture": "cedar_matching",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__cedar_matching__baseline__1"
+    },
+    {
+      "id": "main__cedar_override__reminder__1",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "main__cedar_matching__generic__0",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_ambiguous__baseline__1",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "action__harbor_ambiguous__baseline__1",
+      "stage": "action",
+      "fixture": "harbor_ambiguous",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_matching__reminder__1",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_matching__explicit__1",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_matching__baseline__0",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_matching__generic__1",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "probe__willow_ambiguous",
+      "stage": "probe",
+      "fixture": "willow_ambiguous",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_override__explicit__0",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_ambiguous__baseline__1",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "review__cedar_override__0",
+      "stage": "review",
+      "fixture": "cedar_override",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__cedar_override__baseline__0"
+    },
+    {
+      "id": "main__willow_ambiguous__generic__1",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "main__cedar_matching__generic__2",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "long__cedar_override",
+      "stage": "long",
+      "fixture": "cedar_override",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__aurora_override__reminder__0",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_ambiguous__explicit__0",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "probe__harbor_matching",
+      "stage": "probe",
+      "fixture": "harbor_matching",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_override__generic__0",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "review__willow_override__0",
+      "stage": "review",
+      "fixture": "willow_override",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__willow_override__baseline__0"
+    },
+    {
+      "id": "main__aurora_override__generic__1",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "main__harbor_matching__reminder__1",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "review__cedar_matching__0",
+      "stage": "review",
+      "fixture": "cedar_matching",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__cedar_matching__baseline__0"
+    },
+    {
+      "id": "main__harbor_matching__explicit__0",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_ambiguous__generic__2",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "generic",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_override__generic__0",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_matching__reminder__0",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "action__harbor_matching__explicit__0",
+      "stage": "action",
+      "fixture": "harbor_matching",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "probe__cedar_matching",
+      "stage": "probe",
+      "fixture": "cedar_matching",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_matching__baseline__1",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "action__harbor_matching__baseline__1",
+      "stage": "action",
+      "fixture": "harbor_matching",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "review__harbor_ambiguous__1",
+      "stage": "review",
+      "fixture": "harbor_ambiguous",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__harbor_ambiguous__baseline__1"
+    },
+    {
+      "id": "main__harbor_override__baseline__0",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "review__harbor_matching__2",
+      "stage": "review",
+      "fixture": "harbor_matching",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__harbor_matching__baseline__2"
+    },
+    {
+      "id": "main__cedar_override__baseline__1",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_matching__generic__1",
+      "stage": "main",
+      "fixture": "willow_matching",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_matching__explicit__1",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "probe__harbor_override",
+      "stage": "probe",
+      "fixture": "harbor_override",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "long__cedar_matching",
+      "stage": "long",
+      "fixture": "cedar_matching",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__willow_ambiguous__reminder__1",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_matching__explicit__2",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "probe__cedar_override",
+      "stage": "probe",
+      "fixture": "cedar_override",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "action__harbor_override__baseline__0",
+      "stage": "action",
+      "fixture": "harbor_override",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_ambiguous__explicit__1",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_matching__baseline__0",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_override__baseline__0",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "action__harbor_override__explicit__1",
+      "stage": "action",
+      "fixture": "harbor_override",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_override__reminder__1",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "review__harbor_ambiguous__2",
+      "stage": "review",
+      "fixture": "harbor_ambiguous",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__harbor_ambiguous__baseline__2"
+    },
+    {
+      "id": "main__aurora_ambiguous__baseline__1",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_ambiguous__baseline__0",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_override__generic__0",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_matching__baseline__1",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "long__harbor_matching",
+      "stage": "long",
+      "fixture": "harbor_matching",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__aurora_matching__reminder__0",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_ambiguous__baseline__2",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "review__aurora_matching__1",
+      "stage": "review",
+      "fixture": "aurora_matching",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__aurora_matching__baseline__1"
+    },
+    {
+      "id": "main__aurora_matching__baseline__1",
+      "stage": "main",
+      "fixture": "aurora_matching",
+      "condition": "baseline",
+      "rep": 1
+    },
+    {
+      "id": "review__cedar_ambiguous__1",
+      "stage": "review",
+      "fixture": "cedar_ambiguous",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__cedar_ambiguous__baseline__1"
+    },
+    {
+      "id": "review__aurora_ambiguous__2",
+      "stage": "review",
+      "fixture": "aurora_ambiguous",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__aurora_ambiguous__baseline__2"
+    },
+    {
+      "id": "review__harbor_matching__1",
+      "stage": "review",
+      "fixture": "harbor_matching",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__harbor_matching__baseline__1"
+    },
+    {
+      "id": "main__cedar_matching__reminder__0",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_override__explicit__0",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "explicit",
+      "rep": 0
+    },
+    {
+      "id": "action__harbor_ambiguous__baseline__0",
+      "stage": "action",
+      "fixture": "harbor_ambiguous",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "review__willow_matching__2",
+      "stage": "review",
+      "fixture": "willow_matching",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__willow_matching__baseline__2"
+    },
+    {
+      "id": "long__harbor_override",
+      "stage": "long",
+      "fixture": "harbor_override",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_ambiguous__reminder__2",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "main__harbor_override__explicit__1",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__harbor_ambiguous__generic__0",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "generic",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_override__generic__1",
+      "stage": "main",
+      "fixture": "harbor_override",
+      "condition": "generic",
+      "rep": 1
+    },
+    {
+      "id": "main__cedar_matching__baseline__2",
+      "stage": "main",
+      "fixture": "cedar_matching",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "main__aurora_override__explicit__2",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_ambiguous__baseline__0",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "long__aurora_override",
+      "stage": "long",
+      "fixture": "aurora_override",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__harbor_matching__baseline__0",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "review__cedar_ambiguous__0",
+      "stage": "review",
+      "fixture": "cedar_ambiguous",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__cedar_ambiguous__baseline__0"
+    },
+    {
+      "id": "main__harbor_matching__explicit__2",
+      "stage": "main",
+      "fixture": "harbor_matching",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "main__harbor_ambiguous__reminder__0",
+      "stage": "main",
+      "fixture": "harbor_ambiguous",
+      "condition": "reminder",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_override__baseline__2",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "baseline",
+      "rep": 2
+    },
+    {
+      "id": "main__willow_ambiguous__baseline__0",
+      "stage": "main",
+      "fixture": "willow_ambiguous",
+      "condition": "baseline",
+      "rep": 0
+    },
+    {
+      "id": "main__cedar_ambiguous__explicit__2",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "explicit",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_override__explicit__1",
+      "stage": "main",
+      "fixture": "cedar_override",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__aurora_ambiguous__reminder__2",
+      "stage": "main",
+      "fixture": "aurora_ambiguous",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "review__harbor_ambiguous__0",
+      "stage": "review",
+      "fixture": "harbor_ambiguous",
+      "condition": "review",
+      "rep": 0,
+      "depends_on": "main__harbor_ambiguous__baseline__0"
+    },
+    {
+      "id": "review__aurora_matching__2",
+      "stage": "review",
+      "fixture": "aurora_matching",
+      "condition": "review",
+      "rep": 2,
+      "depends_on": "main__aurora_matching__baseline__2"
+    },
+    {
+      "id": "main__aurora_override__reminder__1",
+      "stage": "main",
+      "fixture": "aurora_override",
+      "condition": "reminder",
+      "rep": 1
+    },
+    {
+      "id": "main__cedar_ambiguous__reminder__2",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "main__cedar_ambiguous__explicit__1",
+      "stage": "main",
+      "fixture": "cedar_ambiguous",
+      "condition": "explicit",
+      "rep": 1
+    },
+    {
+      "id": "main__willow_override__reminder__2",
+      "stage": "main",
+      "fixture": "willow_override",
+      "condition": "reminder",
+      "rep": 2
+    },
+    {
+      "id": "probe__aurora_ambiguous",
+      "stage": "probe",
+      "fixture": "aurora_ambiguous",
+      "condition": "probe",
+      "rep": 0
+    },
+    {
+      "id": "review__harbor_override__1",
+      "stage": "review",
+      "fixture": "harbor_override",
+      "condition": "review",
+      "rep": 1,
+      "depends_on": "main__harbor_override__baseline__1"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "aurora_ambiguous",
+      "split": "development",
+      "task": "星图导出任务的断点续传",
+      "other_task": "发票样式调整",
+      "current": "feature/star-export",
+      "other": "feature/invoice-layout",
+      "language": "zh",
+      "family": "aurora",
+      "kind": "ambiguous"
+    },
+    {
+      "id": "aurora_matching",
+      "split": "development",
+      "task": "星图导出任务的断点续传",
+      "other_task": "发票样式调整",
+      "current": "feature/star-export",
+      "other": "feature/invoice-layout",
+      "language": "zh",
+      "family": "aurora",
+      "kind": "matching"
+    },
+    {
+      "id": "aurora_override",
+      "split": "development",
+      "task": "星图导出任务的断点续传",
+      "other_task": "发票样式调整",
+      "current": "feature/star-export",
+      "other": "feature/invoice-layout",
+      "language": "zh",
+      "family": "aurora",
+      "kind": "override"
+    },
+    {
+      "id": "willow_ambiguous",
+      "split": "development",
+      "task": "食谱收藏的离线同步",
+      "other_task": "日历主题调整",
+      "current": "feature/recipe-sync",
+      "other": "feature/calendar-theme",
+      "language": "zh",
+      "family": "willow",
+      "kind": "ambiguous"
+    },
+    {
+      "id": "willow_matching",
+      "split": "development",
+      "task": "食谱收藏的离线同步",
+      "other_task": "日历主题调整",
+      "current": "feature/recipe-sync",
+      "other": "feature/calendar-theme",
+      "language": "zh",
+      "family": "willow",
+      "kind": "matching"
+    },
+    {
+      "id": "willow_override",
+      "split": "development",
+      "task": "食谱收藏的离线同步",
+      "other_task": "日历主题调整",
+      "current": "feature/recipe-sync",
+      "other": "feature/calendar-theme",
+      "language": "zh",
+      "family": "willow",
+      "kind": "override"
+    },
+    {
+      "id": "harbor_ambiguous",
+      "split": "holdout",
+      "task": "thumbnail job retries",
+      "other_task": "notification digest formatting",
+      "current": "feature/thumbnail-retry",
+      "other": "feature/digest-layout",
+      "language": "en",
+      "family": "harbor",
+      "kind": "ambiguous"
+    },
+    {
+      "id": "harbor_matching",
+      "split": "holdout",
+      "task": "thumbnail job retries",
+      "other_task": "notification digest formatting",
+      "current": "feature/thumbnail-retry",
+      "other": "feature/digest-layout",
+      "language": "en",
+      "family": "harbor",
+      "kind": "matching"
+    },
+    {
+      "id": "harbor_override",
+      "split": "holdout",
+      "task": "thumbnail job retries",
+      "other_task": "notification digest formatting",
+      "current": "feature/thumbnail-retry",
+      "other": "feature/digest-layout",
+      "language": "en",
+      "family": "harbor",
+      "kind": "override"
+    },
+    {
+      "id": "cedar_ambiguous",
+      "split": "holdout",
+      "task": "museum catalog search pagination",
+      "other_task": "profile badge styling",
+      "current": "feature/catalog-pages",
+      "other": "feature/profile-badges",
+      "language": "en",
+      "family": "cedar",
+      "kind": "ambiguous"
+    },
+    {
+      "id": "cedar_matching",
+      "split": "holdout",
+      "task": "museum catalog search pagination",
+      "other_task": "profile badge styling",
+      "current": "feature/catalog-pages",
+      "other": "feature/profile-badges",
+      "language": "en",
+      "family": "cedar",
+      "kind": "matching"
+    },
+    {
+      "id": "cedar_override",
+      "split": "holdout",
+      "task": "museum catalog search pagination",
+      "other_task": "profile badge styling",
+      "current": "feature/catalog-pages",
+      "other": "feature/profile-badges",
+      "language": "en",
+      "family": "cedar",
+      "kind": "override"
+    }
+  ],
+  "source_sha": "7b150a33ec015f6922eed573e656b5732574b125",
+  "action_permission": "opt-in unrestricted CLI; synthetic cwd only"
+}

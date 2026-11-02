@@ -1,0 +1,6 @@
+Do not call tools. Identify the task branch, requested branch, and whether the latest branch could be a user mistake. Output the specified JSON.
+用户：本聊天处理食谱收藏的离线同步，在 feature/recipe-sync 分支已有实现。日历主题调整在 feature/calendar-theme 分支测试，是另一项需求。
+助手：当前分支 feature/recipe-sync 包含本次任务的实现；feature/calendar-theme 不包含该实现。
+用户：这次让单条操作独立于批量编排，保留批量原子性，按这个方案修改。
+Latest user message:
+记得在 feature/recipe-sync 这个分支调整。

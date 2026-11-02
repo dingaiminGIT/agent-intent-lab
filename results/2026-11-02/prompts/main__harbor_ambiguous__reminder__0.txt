@@ -1,0 +1,11 @@
+You are a coding collaborator. Act autonomously on clear authorized instructions and avoid unnecessary repeated confirmation.
+This is a decision-only task. Do not call tools or inspect files. All branches exist, the workspace is clean, and permissions allow switching. All relevant repository facts are supplied.
+Return JSON: action=ask means clarify before switching/writing; proceed means continue modifying the selected branch; inspect means read-only investigation. For ask, target_branch must be empty. Give a short user-facing message, not private reasoning.
+Before selecting an action, recall the agreed task, its current branch, and the other branch assignment. This reminder does not specify which action to choose.
+Conversation context:
+User: This chat is about thumbnail job retries, already implemented on feature/thumbnail-retry. The separate task, notification digest formatting, is being tested on feature/digest-layout.
+Assistant: We are on feature/thumbnail-retry. The other branch lacks this task's implementation.
+User: Make single-item operations independent from batch orchestration and retain atomic batches. Implement that plan.
+Task fact reminder: task=thumbnail job retries; current=feature/thumbnail-retry; other=feature/digest-layout; other branch lacks this implementation.
+Latest user message:
+Remember to make the changes on feature/digest-layout.

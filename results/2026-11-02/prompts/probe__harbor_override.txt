@@ -1,0 +1,6 @@
+Do not call tools. Identify the task branch, requested branch, and whether the latest branch could be a user mistake. Output the specified JSON.
+User: This chat is about thumbnail job retries, already implemented on feature/thumbnail-retry. The separate task, notification digest formatting, is being tested on feature/digest-layout.
+Assistant: We are on feature/thumbnail-retry. The other branch lacks this task's implementation.
+User: Make single-item operations independent from batch orchestration and retain atomic batches. Implement that plan.
+Latest user message:
+I know feature/digest-layout belongs to the other task under testing and lacks this implementation. I intentionally want to move this work there for a combined release, add the missing implementation, and retest. Confirmed: modify feature/digest-layout.

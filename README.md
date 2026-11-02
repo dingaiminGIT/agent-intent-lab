@@ -1,5 +1,7 @@
 # Agent Intent Lab
 
+[中文说明](README.zh-CN.md) · [First campaign results](results/2026-11-02/REPORT.md) · [中文结果解读](results/2026-11-02/INSIGHTS.zh-CN.md)
+
 **Does an agent notice when a new instruction may conflict with the task it is already doing—and does it stop before changing state?**
 
 A reproducible, synthetic evaluation of task-boundary clarification. It measures
@@ -21,9 +23,26 @@ contains no work-project code, production data, or private conversation history.
 These experiments measure behavior. They do **not** identify attention heads,
 training rewards, private reasoning, or a unique neural cause.
 
-## First campaign
+## First campaign — completed
 
-The frozen [protocol](PROTOCOL.md) schedules **216 episodes**:
+All **216 episodes** produced valid outputs (not all outputs were correct), with
+no retries or missing episodes in the scored campaign. The configured model
+identifier was `gpt-6-astra`, reasoning effort `high`.
+
+| Main condition | Clarifies ambiguous requests | Unnecessary clarification on controls |
+|---|---:|---:|
+| Baseline | 8/12 | 0/24 |
+| Factual reminder | 10/12 | 0/24 |
+| Generic conflict rule | 12/12 | 0/24 |
+| Explicit migration rule | 12/12 | 0/24 |
+
+**A second model pass was not automatically safer:** independent review reduced
+desired clarification from 8/12 to 4/12 on ambiguous cases (2 corrections, 6
+regressions). In actual-action trials, baseline mutated on 2/2 ambiguous requests;
+the explicit policy left state unchanged and asked in 2/2. These are small,
+templated samples, not production reliability estimates.
+
+The frozen [protocol](PROTOCOL.md) scheduled **216 episodes**:
 
 | Stage | Episodes |
 |---|---:|
@@ -38,7 +57,10 @@ before collecting results; a holdout label alone is not evidence of broad
 generalization. Repeats share the same scenario and are not independent business
 incidents. Infrastructure failures and protocol violations remain visible.
 
-Results are published under [`results/`](results/) after export and inspection.
+The [full report](results/2026-11-02/REPORT.md),
+[machine-readable trials](results/2026-11-02/trials.jsonl),
+[manifest](results/2026-11-02/manifest.json), and
+[sanitized executed prompts](results/2026-11-02/prompts/) are published after export and inspection.
 
 ## Run locally
 

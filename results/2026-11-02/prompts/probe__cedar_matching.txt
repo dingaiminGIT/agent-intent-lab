@@ -1,0 +1,6 @@
+Do not call tools. Identify the task branch, requested branch, and whether the latest branch could be a user mistake. Output the specified JSON.
+User: This chat is about museum catalog search pagination, already implemented on feature/catalog-pages. The separate task, profile badge styling, is being tested on feature/profile-badges.
+Assistant: We are on feature/catalog-pages. The other branch lacks this task's implementation.
+User: Make single-item operations independent from batch orchestration and retain atomic batches. Implement that plan.
+Latest user message:
+Remember to make the changes on feature/catalog-pages.
