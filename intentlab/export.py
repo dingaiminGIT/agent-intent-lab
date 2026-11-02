@@ -1,6 +1,7 @@
 """Allowlisted, sanitized public artifacts and descriptive reports."""
 import json
 import os
+import hashlib
 import re
 from collections import Counter
 from pathlib import Path
@@ -33,7 +34,9 @@ def export(source,destination):
         prompt_files=sorted((source/'trials'/record['id']).glob('attempt-*/prompt.txt'))
         if prompt_files:
             folder=destination/'prompts';folder.mkdir(exist_ok=True)
-            (folder/(record['id']+'.txt')).write_text(clean(prompt_files[0].read_text(),scratch))
+            public_prompt=clean(prompt_files[0].read_text(),scratch)
+            public['public_prompt_sha256']=hashlib.sha256(public_prompt.encode()).hexdigest()
+            (folder/(record['id']+'.txt')).write_text(public_prompt)
     (destination/'manifest.json').write_text(json.dumps(clean(manifest),ensure_ascii=False,indent=2)+'\n')
     (destination/'trials.jsonl').write_text(''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in sorted(published,key=lambda x:x['id'])))
     report=summary(published,manifest)
@@ -117,5 +120,6 @@ def summary(rows,manifest):
                   '- Global CLI base instructions may remain despite requested configuration isolation. No claim of bare-model measurement.',
                   '- Reviewer and context comparisons are small; no causal claims about training, attention heads, or model internals.',
                   '- Public files exclude credentials, local configuration, private stderr, and reasoning traces. Public action prompts/paths normalize disposable directories.',
+                  '- prompt_sha256 hashes the exact executed input; public_prompt_sha256 hashes the exported, path-normalized input. They can differ for action trials.',
                   '- No production or work-project source, requirements, branch names, or private chat history is used.',''])
     return '\n'.join(lines)

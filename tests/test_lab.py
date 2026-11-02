@@ -1,8 +1,12 @@
 import unittest
 import tomllib
+import tempfile
+import json
+import hashlib
+from pathlib import Path
 from intentlab.scenarios import fixtures,manifest,prompt
 from intentlab.scoring import score_decision,score_action
-from intentlab.export import clean
+from intentlab.export import clean,export
 from intentlab.runtime import toml_literal
 
 class LabTests(unittest.TestCase):
@@ -41,5 +45,23 @@ class LabTests(unittest.TestCase):
         f=[x for x in fixtures() if x['kind']=='matching'][0]
         text=prompt({'stage':'main','condition':'baseline'},f)
         self.assertIn(f['current'],text.split('Latest user message:')[-1])
+    def test_export_allowlist_and_public_prompt_hash(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source=Path(tmp)/'private';source.mkdir()
+            manifest={'runtime':{'model':'synthetic-test-model','effort':'high','cli':'test'},'source_sha':'test-commit'}
+            (source/'manifest.json').write_text(json.dumps(manifest))
+            (source/'scratch.private.txt').write_text('/tmp/fictional-sandbox')
+            record={'id':'test','stage':'main','fixture':self.f['id'],'condition':'baseline','rep':0,'split':'development','kind':'ambiguous','family':'aurora','status':'valid','prompt_sha256':'original-hash','response':{'action':'ask','target_branch':'','message':'Clarify?'},'score':{'clarifies':True,'unclarified_transition':False,'overclarifies':False,'passes':True},'attempts':[{'exit_code':0,'usage':[],'private_field':'NEVER_EXPORT_PRIVATE_FIELD'}]}
+            (source/'records.private.json').write_text(json.dumps([record]))
+            folder=source/'trials/test/attempt-0';folder.mkdir(parents=True)
+            (folder/'prompt.txt').write_text('Synthetic path /tmp/fictional-sandbox/file.txt')
+            (folder/'stderr.private.txt').write_text('NEVER_EXPORT_PRIVATE_STDERR')
+            dest=Path(tmp)/'public';export(source,dest)
+            payload=(dest/'trials.jsonl').read_text()
+            self.assertNotIn('NEVER_EXPORT',payload)
+            row=json.loads(payload)
+            self.assertEqual(row['public_prompt_sha256'],hashlib.sha256((dest/'prompts/test.txt').read_bytes()).hexdigest())
+            self.assertNotIn('/tmp/fictional-sandbox',(dest/'prompts/test.txt').read_text())
+            self.assertFalse(list(dest.rglob('*private*')))
 
 if __name__=='__main__':unittest.main()
