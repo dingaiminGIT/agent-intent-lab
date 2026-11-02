@@ -1,6 +1,6 @@
 # Agent Intent Lab
 
-[中文说明](README.zh-CN.md) · [First campaign results](results/2026-11-02/REPORT.md) · [中文结果解读](results/2026-11-02/INSIGHTS.zh-CN.md)
+English · [简体中文](README.zh-CN.md) · [First campaign results](results/2026-11-02/REPORT.md) · [中文结果解读](results/2026-11-02/INSIGHTS.zh-CN.md)
 
 **Does an agent notice when a new instruction may conflict with the task it is already doing—and does it stop before changing state?**
 
