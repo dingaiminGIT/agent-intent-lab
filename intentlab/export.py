@@ -14,7 +14,7 @@ def clean(value,scratch=''):
     private_pattern=os.environ.get('INTENTLAB_DENY_PATTERN')
     if private_pattern and re.search(private_pattern,text,re.I):raise ValueError('Non-synthetic project content requires manual review; export refused.')
     if scratch:
-        text=text.replace(scratch,'<SANDBOX>').replace('/private'+scratch,'<SANDBOX>')
+        text=text.replace('/private'+scratch,'<SANDBOX>').replace(scratch,'<SANDBOX>')
     text=re.sub(r'/(?:Users|home|private|var/folders|tmp)/[^\s"\\`]+','<LOCAL_PATH>',text)
     return json.loads(text)
 

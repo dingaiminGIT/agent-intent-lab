@@ -33,6 +33,7 @@ class LabTests(unittest.TestCase):
         with self.assertRaises(ValueError):clean({'secret':'ghp_'+'x'*30})
     def test_public_export_normalizes_local_paths(self):
         self.assertNotIn('/Users/',clean('At /Users/example/private/file.txt'))
+        self.assertEqual(clean('/private/var/folders/example/repo/file.txt','/var/folders/example'),'<SANDBOX>/repo/file.txt')
     def test_cli_inline_tables_are_real_toml(self):
         original=[{'path':'/tmp/example/SKILL.md','enabled':False}]
         self.assertEqual(tomllib.loads('items='+toml_literal(original))['items'],original)
